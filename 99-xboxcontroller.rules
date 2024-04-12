@@ -1,12 +1,20 @@
 # Xbox Controller
 ACTION=="bind", ATTR{idVendor}=="045e", ATTR{idProduct}=="0202", DRIVER=="usb", GROUP:="users", MODE:="0666", TAG+="uaccess"
-# Xbox Controller S
+
+# Xbox Controller S (Japan)
 ACTION=="bind", ATTR{idVendor}=="045e", ATTR{idProduct}=="0285", DRIVER=="usb", GROUP:="users", MODE:="0666", TAG+="uaccess"
-# Xbox Controller S (Alt)
+
+# Xbox Controller S
+ACTION=="bind", ATTR{idVendor}=="045e", ATTR{idProduct}=="0287", DRIVER=="usb", GROUP:="users", MODE:="0666", TAG+="uaccess"
+
+# Xbox Controller S (USA)
 ACTION=="bind", ATTR{idVendor}=="045e", ATTR{idProduct}=="0289", DRIVER=="usb", GROUP:="users", MODE:="0666", TAG+="uaccess"
+
 # Xbox Live Communicator
 ACTION=="bind", ATTR{idVendor}=="045e", ATTR{idProduct}=="0283", DRIVER=="usb", GROUP:="users", MODE:="0666", TAG+="uaccess"
-# Xbox Controller S
+
+# Xbox Memory Unit (8MB)
 ACTION=="bind", ATTR{idVendor}=="045e", ATTR{idProduct}=="0280", DRIVER=="usb", GROUP:="users", MODE:="0666", TAG+="uaccess"
+
 # Steel Battalion Controller
 ACTION=="bind", ATTR{idVendor}=="0a7b", ATTR{idProduct}=="d000", DRIVER=="usb", GROUP:="users", MODE:="0666", TAG+="uaccess"

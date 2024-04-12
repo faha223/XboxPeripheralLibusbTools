@@ -94,3 +94,27 @@ If you have installed the udev rules and have forwarded the device to your contr
   xpad                   49152  0
   ```
   - If the xpad module isn't running, you can enable it by running `sudo modprobe xpad` from the terminal.
+
+## Additional Information
+
+### Controller Ports
+Controller ports are not linearly mapped in the Xbox's hardware. For this most part, this is hidden by Xemu. However, when users occasionally have to do things through the monitor this information is needed. This table shows which USB port is used for which player
+| Player | Xemu Port Number |
+|:------:|:----------------:|
+| 1      | 1.3              |
+| 2      | 1.4              |
+| 3      | 1.1              |
+| 4      | 1.2              |
+
+### Well Known Device Vendor IDs and Product IDs
+These can be used to connect controllers in Xemu by Vendor ID and Product ID.
+
+| Device Name                | Vendor ID | Product ID |
+|----------------------------|:---------:|:----------:|
+| Xbox Controller            | 045e      | 0202       |
+| Xbox Controller S (Japan)  | 045e      | 0285       |
+| Xbox Controller S          | 045e      | 0287       |
+| Xbox Controller S (USA)    | 045e      | 0289       |
+| Xbox Live Communicator     | 045e      | 0283       |
+| Xbox Memory Unit (8 MB)    | 045e      | 0280       |
+| Steel Battalion Controller | 0a7b      | d000       |
