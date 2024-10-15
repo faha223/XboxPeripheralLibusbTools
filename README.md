@@ -55,7 +55,7 @@ To connect a controller by forwarding the ports of its internal hub (this is how
 To connect a controller by Vendor ID and Product ID (this is easier than forwarding the controller's internal ports, but is not as robust)
 - Open the monitor by pressing the tilde [~] key
 - Type `stop` to pause emulation
-- Type `device_add usb-host,vendor_id=XXXX,product_id=YYYY,port=1.3` to forward you device by Vendor ID and Product ID to the Player 1 port.   
+- Type `device_add usb-host,vendorid=XXXX,productid=YYYY,port=1.3` to forward you device by Vendor ID and Product ID to the Player 1 port.   
   - You'll need to replace XXXX with the vendor id of your device
   - You'll need to replace YYYY with the product ID of your device
   - In Linux, you can find the vendor id and product id by typing `lsusb | grep Xbox` in the terminal.
