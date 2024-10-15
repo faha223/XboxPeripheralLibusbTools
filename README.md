@@ -64,14 +64,14 @@ To connect a controller by Vendor ID and Product ID (this is easier than forward
     Bus 001 Device 004: ID 045e:0288 Microsoft Corp. Xbox Controller S Hub
     Bus 001 Device 005: ID 045e:0289 Microsoft Corp. Xbox Controller S
     ```
-    - In this instance the vendor ID is 045e and the Product Id is 0289, so the command you would enter in the Monitor to forward this device to Player 1's controller port is `device_add usb-host,vendor_id=045e,product_id=0289,port=1.3`.
+    - In this instance the vendor ID is 045e and the Product Id is 0289, so the command you would enter in the Monitor to forward this device to Player 1's controller port is `device_add usb-host,vendorid=0x045e,productid=0x0289,port=1.3`.
   - In Windows you can find the Vendor Id and Product Id of a device in the Device Manager
     - Find the device in the list
     - Right click the device in the list and select "Properties" from the context menu.
     - In the Device Properties window that opens up, navigate to the Details tab
     - The Property drop-down, find "Hardware IDs"
     - There should be a line in the Value box that looks like `USB\VID_045E&PID_0289`. This is the vendor id and product id of the device.
-    - In this instance the vendor ID is 045e and the Product Id is 0289, so the command you would enter in the Monitor to forward this device to Player 1's controller port is `device_add usb-host,vendor_id=045e,product_id=0289,port=1.3`.
+    - In this instance the vendor ID is 045e and the Product Id is 0289, so the command you would enter in the Monitor to forward this device to Player 1's controller port is `device_add usb-host,vendorid=0x045e,productid=0x0289,port=1.3`.
   - In macOS I suspect you can just follow the Linux instructions, but I don't know for certain
 - Type `cont` to resume emulation
 
